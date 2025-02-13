@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RiskAlytics</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="RiskAlytics" name="keywords">
+    <meta content="Riesgos y Soluciones Financieras" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+54 11 3255 1565</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>info.riskalytics@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <!-- Enlace a la versión en inglés -->
+                    <a class="text-primary px-2" href="index_eng.html">
+                        <img src="img/uk.png" alt="English" style="width: 24px; height: auto;">
+                    </a>
+                    <!-- Enlace a la versión en español -->
+                    <a class="text-primary px-2" href="index.html">
+                        <img src="img/spain.png" alt="Español" style="width: 24px; height: auto;">
+                    </a>
+                    <a class="text-primary px-2" href="https://www.linkedin.com/company/riskalytic">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-primary px-2" href="https://www.linkedin.com/company/riskalytic">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-primary px-2" href="https://www.linkedin.com/company/riskalytic">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-primary px-2" href="https://www.instagram.com/riskalytics?igsh=ZGV4M3BscDJ2czhx">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-primary"><span class="text-dark">RISK</span> Alytics</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="#about" class="nav-item nav-link">Acerca de</a>
+                    <a href="#service" class="nav-item nav-link">Servicios</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item">Nuestro Equipo</a>
+                            <a href="https://www.linkedin.com/company/riskalytic" class="dropdown-item">LinkedIn</a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-item nav-link">Contacto</a>
+                </div>
+                <a href="#" class="btn btn-primary d-none d-lg-block" onclick="showBookingNotification()">Contacto</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid bg-jumbotron" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Equipo</h3>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">Inicio</a></p>
+                <i class="far fa-circle px-3"></i>
+                <p class="m-0">Equipo</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+<!-- Team Start -->
+<div id="team" class="container-fluid py-5">
+    <div class="container pt-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Nuestro Equipo</h6>
+                <h1 class="mb-5">Gestión del riesgo</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- Modificado: para centrar las imágenes -->
+            <div class="col-lg-4 col-md-6 mb-5"> <!-- Modificado: cambia el tamaño de la columna y agrega un poco de margen inferior -->
+                <div class="team position-relative overflow-hidden team-image">
+                    <a href="#modal-gabriel" data-toggle="modal">
+                        <img class="img-fluid img-team" src="img/gabi_gris.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Ver Experiencia">
+                    </a>
+                    <div class="position-relative text-center">
+                        <div class="team-text bg-dark text-white">
+                            <h5 class="text-white" style="font-family: serif; font-weight: bold; font-size: 1.7rem;">Gabriel Aranda</h5>
+                            <p class="m-0 text-uppercase" style="letter-spacing: 2px;">CTO & Founder</p>
+                        </div>
+                        <div class="team-social bg-dark text-center">
+                            <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/gabriel-alejandro-aranda-02714a151"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/gabi.aranda14?igsh=MmJwNGlranFzdWJl"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5"> <!-- Modificado: cambia el tamaño de la columna y agrega un poco de margen inferior -->
+                <div class="team position-relative overflow-hidden team-image">
+                    <a href="#modal-nicolas" data-toggle="modal">
+                        <img class="img-fluid img-team" src="img/colas_gris.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Ver Experiencia">
+                    </a>
+                    <div class="position-relative text-center">
+                        <div class="team-text bg-dark text-white">
+                            <h5 class="text-white" style="font-family: serif; font-weight: bold; font-size: 1.7rem;">Nicolas Lazarte</h5>
+                            <p class="m-0 text-uppercase" style="letter-spacing: 2px;">CEO & Founder</p>
+                        </div>
+                        <div class="team-social bg-dark text-center">
+                            <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/nicolasgabriellazarte/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nicolazarte_?igsh=MWZ6MWwweXlsMDYweQ=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+<!-- Modal Gabriel -->
+<div class="modal fade" id="modal-gabriel" tabindex="-1" role="dialog" aria-labelledby="modal-gabriel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <span class="text-dark" style="font-family: serif; font-weight: bold; font-size: 1.7rem;">Gabriel Aranda</span><br>
+                    <span class="m-0 text-uppercase small" style="letter-spacing: 2px;">Software Developer - Más de 6 años de experiencia</span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.andreani.com" target="_blank">
+                            <img src="img/andreani.jpg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">ANDREANI Grupo Logístico (2022-2024)</p>
+                            <p>Fui encargado de llevar adelante el proyecto de <u>Geocodificación</u>. La solución se implementó con éxito en las más de 150 sucursales a lo largo del país. </p>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.cohen.com.ar/" target="_blank">
+                            <img src="img/cochen.jpeg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">COHEN Aliados Financieros (2020-2022)</p>
+                            <p>Me destacó mi capacidad para innovar y desarrollar un dashboard interno que automatizó procesos diarios. Esta implementación resultó en un aumento del 60% en la <u>productividad</u> del sector.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.matbarofex.com.ar/" target="_blank">
+                            <img src="img/matba.jpeg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">MATBA ROFEX (2018-2020)</p>
+                            <p>Seleccionado para participar en el Programa NOR V de Matba-Rofex como operador de derivados financieros, luego de obtener premios relacionados con <u>Machine Learning</u> y <u>Algoritmos de Trading</u> con Python.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Nicolas -->
+<div class="modal fade" id="modal-nicolas" tabindex="-1" role="dialog" aria-labelledby="modal-nicolas" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <span class="text-dark" style="font-family: serif; font-weight: bold; font-size: 1.7rem;">Nicolas Lazarte</span><br>
+                    <span class="m-0 text-uppercase small" style="letter-spacing: 2px;">Internationally Certified Compliance Professional - Más de 10 años de experiencia</span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.brubank.com/" target="_blank">
+                            <img src="img/bru.jpeg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">BRUBANK Banco Digital (2020-2024)</p>
+                            <p>Como líder de datos en AML & Compliance, he sido un pilar fundamental en el diseño e implementación de soluciones innovadoras para combatir el lavado de dinero y garantizar el cumplimiento normativo.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.pwc.com/" target="_blank">
+                            <img src="img/pwc.jpeg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">PWC Consulturia Legal (2018-2020)</p>
+                            <p>Encabezando el equipo de Forensic & Compliance Advisor, he fusionado mis habilidades analíticas con un profundo conocimiento de las regulaciones para identificar y abordar posibles riesgos y vulnerabilidades dentro de las operaciones de la empresa.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.hsbc.com.ar/" target="_blank">
+                            <img src="img/hsbc.jpeg" alt="Company Logo" class="img-fluid rounded-circle border border-dark" style="width: 100px; height: 100px;">
+                        </a>
+                    </div>
+                        <div class="col-md-8">
+                            <p class="font-weight-bold">HSBC Banco Internacional (2014-2018)</p>
+                            <p>En mi trayectoria como AML Compliance, me he dedicado a salvaguardar la integridad financiera de nuestra organización mediante rigurosas políticas y procedimientos.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer Start -->
+    <div id="contact" class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3 text-white"><span class="text-primary">RISK</span> Alytics</h1>
+                    </a>
+                    <p>Risk Alytics es una empresa líder en servicios de análisis de riesgos y soluciones financieras. Como proveedor de servicios de análisis y gestión de riesgos financieros, hemos demostrado nuestro compromiso con la excelencia en varias áreas clave de la industria financiera.</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Nicaragua 4817, CABA, Argentina</p> 
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>30 N Gould St Ste N Sheridan, WY, USA</p> 
+                    <p><i class="fa fa-phone-alt mr-2"></i>+54 11 3255 1565</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+1 (307) 200-9072</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info.riskalytics@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="https://www.linkedin.com/company/riskalytic"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="https://www.linkedin.com/company/riskalytic"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="https://www.linkedin.com/company/riskalytic"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square" href="https://www.instagram.com/riskalytics?igsh=ZGV4M3BscDJ2czhx"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="row">
+                        <div class="col-sm-6 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Enlaces Directos</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                                <a class="text-white-50 mb-2" href="#about"><i class="fa fa-angle-right mr-2"></i>Acerca de</a>
+                                <a class="text-white-50 mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Nuestros Servicios</a>
+                                <a class="text-white-50" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contáctanos</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Newsletter</h5>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="info.riskalytics@gmail.com">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary px-4" onclick="showBookingNotification()">Escríbenos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light border-top py-4" style="border-color: rgba(256, 256, 256, .15) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a href="#">Risk Alytics</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0 text-white">Designed by <a href="https://gabrielaranda.com">Gabriel Aranda</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
