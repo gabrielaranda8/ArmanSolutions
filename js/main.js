@@ -113,7 +113,7 @@
 // Función para mostrar el cuadro de diálogo al hacer clic en el botón "Book Now"
 function showBookingNotification() {
     // Mensaje de notificación
-    var message = "Para agendar una reunión, por favor enviar un correo electrónico a info.armansolutions@gmail.com o un mensaje de WhatsApp al +54 11 3255 1565 y lo atenderán a la brevedad.";
+    var message = "Para agendar una reunión, por favor enviar un correo electrónico a info.armansolutions@gmail.com y lo atenderán a la brevedad.";
 
     // Muestra el cuadro de diálogo con el mensaje
     alert(message);
@@ -122,7 +122,7 @@ function showBookingNotification() {
 // Función para mostrar el cuadro de diálogo al hacer clic en el botón "Book Now"
 function showBookingNotificationEng() {
     // Mensaje de notificación
-    var message = "To schedule a meeting, please send an email to info.armansolutions@gmail.com or a WhatsApp message to +54 11 3255 1565 and you will be attended as soon as possible.";
+    var message = "To schedule a meeting, please send an email to info.armansolutions@gmail.com and you will be attended as soon as possible.";
 
     // Muestra el cuadro de diálogo con el mensaje
     alert(message);
