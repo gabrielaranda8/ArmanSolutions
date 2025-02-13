@@ -9657,6 +9657,11 @@ h6,
   top: 0;
 }
 
+.testimonial-img {
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Hace que la imagen llene el contenedor recortándose si es necesario */
+}
+
 .testimonial-carousel .owl-dots {
   margin-top: 20px;
 }
