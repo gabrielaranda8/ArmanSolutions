@@ -196,3 +196,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 function showBookingNotification() {
     alert("Por favor, completa el formulario de contacto para continuar.");
 }
+
+
+// Boton de whatsapp
+document.querySelector('.whatsapp-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open(this.href, '_blank');
+});
