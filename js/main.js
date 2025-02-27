@@ -153,3 +153,46 @@ function showOverlay(img) {
         overlay.parentNode.removeChild(overlay);
     });
 }
+
+// <!-- JavaScript para manejar el envío a Gmail -->
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el envío normal del formulario
+
+    // Capturar los valores del formulario
+    const name = document.getElementById('name').value;
+    const lastname = document.getElementById('lastname').value;
+    const email = document.getElementById('email').value;
+    const project = document.getElementById('project').value;
+    const message = document.getElementById('message').value;
+
+    // Validar que todos los campos estén llenos
+    if (!name || !lastname || !email || !project || project === "Seleccione un Proyecto" || !message) {
+        alert("Por favor, completa todos los campos antes de enviar.");
+        return;
+    }
+
+    // Construir los parámetros para Gmail
+    const recipient = "info.armansolutions@gmail.com"; // Cambia esto por tu correo
+    const subject = encodeURIComponent(`Consulta sobre ${project} - ${name} ${lastname}`);
+    const body = encodeURIComponent(
+        `Hola,\n\n` +
+        `Me gustaría recibir más información o coordinar sobre el proyecto "${project}".\n\n` +
+        `Detalles:\n` +
+        `Nombre: ${name} ${lastname}\n` +
+        `Email: ${email}\n` +
+        `Mensaje:\n${message}\n\n` +
+        `Gracias,\n${name} ${lastname}`
+    );
+
+    // Crear la URL de Gmail
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+
+    // Abrir Gmail en una nueva pestaña
+    window.open(gmailLink, '_blank');
+});
+
+// Mantengo la función showBookingNotification si la usás
+function showBookingNotification() {
+    alert("Por favor, completa el formulario de contacto para continuar.");
+}
