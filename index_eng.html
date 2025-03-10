@@ -11,7 +11,7 @@
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="ArmanSolutions">
     <meta property="og:description" content="IT y Desarrollo de Software empresarial | Soluciones Exclusivas">
-    <meta property="og:image" content="https://armansolutions.io/img/arman_logo3.PNG">
+    <meta property="og:image" content="https://armansolutions.io/img/logo_arman.ico">
     <meta property="og:url" content="https://armansolutions.io">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ArmanSolutions">
@@ -20,10 +20,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ArmanSolutions">
     <meta name="twitter:description" content="IT y Desarrollo de Software empresarial | Soluciones Exclusivas">
-    <meta name="twitter:image" content="https://armansolutions.io/img/arman_logo3.PNG">
+    <meta name="twitter:image" content="https://armansolutions.io/img/logo_arman.ico">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_arman.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -90,7 +90,8 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
+            <a href="index.html" class="navbar-brand ml-lg-3 d-flex align-items-center">
+                <img src="img/logo_arman.ico" alt="Logo" style="height: 40px; margin-right: 10px;">
                 <h1 class="m-0 text-primary"><span class="text-dark">ARMAN</span> Solutions</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -285,51 +286,51 @@
             <div class="col-lg-6 py-5">
                 <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
                     <h1 class="text-white text-center mb-4">Contact</h1>
-                    <form>
+                    <form id="contactForm">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name" required="required" />
+                                    <input type="text" class="form-control p-4" placeholder="Name" id="name" required="required" style="background-color: #f0f0f0; color: #000000;" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email" required="required" />
+                                    <input type="text" class="form-control p-4" placeholder="Last Name" id="lastname" required="required" style="background-color: #f0f0f0; color: #000000;" />
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
-                                    </div>
+                                    <input type="email" class="form-control p-4" placeholder="Email" id="email" required="required" style="background-color: #f0f0f0; color: #000000;" />
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Business & Intelligence Service</option>
-                                        <option value="2">Salesforce</option>
-                                        <option value="3">Startup MVP Development</option>
-                                        <option value="4">Web App Development</option>
-                                        <option value="5">ChatBot IA</option>
-                                        <option value="6">Computer Vision</option>
+                                    <select class="custom-select px-4" id="project" required="required" style="height: 47px; background-color: #f0f0f0; color: #000000;">
+                                        <option selected>Select a Service</option>
+                                        <option value="Business & Intelligence Service">Business & Intelligence Service</option>
+                                        <option value="Salesforce">Salesforce</option>
+                                        <option value="Startup MVP Development">Startup MVP Development</option>
+                                        <option value="Web App Development">Web App Development</option>
+                                        <option value="ChatBot IA">ChatBot IA</option>
+                                        <option value="Computer Vision">Computer Vision</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;" onclick="showBookingNotificationEng()">Contact</button>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea class="form-control p-4" placeholder="Message" id="message" rows="4" required="required" style="background-color: #f0f0f0; color: #000000;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary btn-block" type="submit" id="submitButton" style="height: 47px;">Send</button>
                             </div>
                         </div>
                     </form>
@@ -548,6 +549,9 @@
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/opens.webp" alt="Company 6" style="max-height: 100px;">
                 </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/mysql_logo.png" alt="Company 6" style="max-height: 100px;">
+                </div>
             </div>
         </div>
     </div>
@@ -578,7 +582,8 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6 pr-lg-5 mb-5">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="img/logo_arman.ico" alt="Logo" style="height: 50px; margin-right: 10px;">
                         <h1 class="mb-3 text-white"><span class="text-primary">ARMAN</span> Solutions</h1>
                     </a>
                     <p>Arman Solutions is a leading IT consulting and software development company, specializing in Salesforce solutions and custom programming. As a full service provider in digital transformation, we have demonstrated our commitment to innovation and excellence in key areas such as application development, systems integration and process automation, helping companies in various industries to enhance their competitiveness in the market.</p>
