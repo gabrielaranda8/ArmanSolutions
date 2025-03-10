@@ -9510,7 +9510,7 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
+  left: 20px;
   bottom: 30px;
   z-index: 11;
   animation: action 1s infinite alternate;
